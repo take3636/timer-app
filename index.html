@@ -8,11 +8,14 @@
 </head>
 <body>
    <div class="container">
-      <p id="timer">25:00</p>
+      <audio id="audio" src="audio/school_bell.mp3"></audio>
+      <label for="selectedMinutes">セットする時間を選んでください</label>
+      <select id="selectedMinutes">
+         <option value="">時間を選んでね</option>
+      </select>
+      <p id="timer">00:00</p>
       <button id="start">start</button>
-      <div class="range">
-         🕧タイマー： <input type="range" id="range" value="00" name="minutes" min="0" max="3600"><span id="setTime">00分</span>
-      </div>
+      <button id="reset">reset</button>
    </div>
 
    <script src="script.js"></script>
